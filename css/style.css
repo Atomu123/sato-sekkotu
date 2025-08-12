@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEF2FF;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 100vw;
+    height: 78px;
+}
+
+.header-logo {
+    height: 60px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+}
+
+.main-image {
+    display: block;
+    width: 100vw;
+    height: 740px;
+}
+
+.main-image-space {
+    display: block;
+    width: 100vw;
+    height: 740px;
+    background-color: aqua;
+    position: relative;
+}
+
+.center-catchphrase {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 960px;
+    height: 254px;
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    margin: auto;
+}
+
+.center-catchphrase h1 {
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro",
+        "MS Mincho", "Yu Mincho", serif;
+        font-size: 32px;
+        margin-top:70px;
+}
+
+.center-catchphrase p {
+    text-decoration: underline;
+    color: #C90000;
+    font-size: 24px;
+}
+.main-contents{
+    background-color: white;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;   
+}
+.message-space{
+    width: 700px;
+    height: 150px;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 5px solid #2B3C73; /* 太さ2px, 実線, 黒 */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: auto;
+    font-size: 18px;
+}
