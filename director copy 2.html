@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接骨院 さとう</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="image/logo.png" alt="接骨院 さとう" class="header-logo">
+        <div class="header-center">
+            <a href="index.html" class="header-menu-selected">トップ</a>
+            <a href="director.html" class="header-menu">ご挨拶</a>
+            <a href="http://" class="header-menu">初めての方へ</a>
+            <a href="http://" class="header-menu">料金</a>
+            <a href="http://" class="header-menu">予約</a>
+        </div>
+    </header>
+    <section class="main-contents">
+        
+    </section>
+    <div>
+        <div class="yoyaku-button-space">
+            <img src="image/button.png" alt="">
+            <button class="yoyaku-button">
+                <span><b>●●●</b></span>
+            </button>
+        </div>
+    </div>
+    <div class="slide-in-target" style="color: aqua;">こんにちは、スライドイン！</div>
+
+</body>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
+
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    document.querySelectorAll('.slide-in-target').forEach(el => observer.observe(el));
+</script>
+
+</html>
