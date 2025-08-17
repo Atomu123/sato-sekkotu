@@ -131,8 +131,8 @@ header {
 }
 
 .yoyaku-button {
-    width: 62px;
-    height: 62px;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
     display: inline-block;
     border: 0px;
@@ -140,6 +140,7 @@ header {
     color: white;
     margin-top: auto;
     margin-top: 10px;
+
 }
 
 .yoyaku-button-space {
@@ -415,7 +416,7 @@ h2 {
     text-decoration: none;
 }
 
-.header-center{
+.header-center {
     position: fixed;
     z-index: 4;
     width: 100%;
@@ -423,21 +424,29 @@ h2 {
 }
 
 .slide-in-target {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
 }
 
 .slide-in-target.active {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.yoyaku-button-menu{
+.yoyaku-button-menu {
     float: right;
     width: 62px;
     height: 200px;
     position: fixed;
     z-index: 5;
-    bottom: 150px;
+    bottom: 200px;
+}
+
+.button-img {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    text-align: center;
+
 }
