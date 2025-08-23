@@ -12,42 +12,89 @@
     <header>
         <img src="image/logo.png" alt="接骨院 さとう" class="header-logo">
         <div class="header-center">
-            <a href="index.html" class="header-menu-selected">トップ</a>
-            <a href="director.html" class="header-menu">ご挨拶</a>
-            <a href="http://" class="header-menu">初めての方へ</a>
-            <a href="http://" class="header-menu">料金</a>
-            <a href="http://" class="header-menu">予約</a>
+            <a href="index.html" class="header-menu">トップ</a>
+            <a href="director.html" class="header-menu-selected">ご挨拶</a>
+            <a href="first.html" class="header-menu">初めての方へ</a>
+            <a href="price.html" class="header-menu">料金</a>
+            <a href="reservation.html" class="header-menu">予約</a>
         </div>
     </header>
+
     <section class="main-contents">
-        
+        <div class="main-contents-center">
+            <h2 class="heading">
+                ご挨拶
+            </h2>
+        </div>
+        <div class="main-contents-center">
+            <div class="director-info-detail">
+                <div class="main-contents-center">
+                    <div class="director-image">
+                        <img src="" alt="院長写真" srcset="">
+                    </div>
+                </div>
+
+                <div style="text-align: center;margin-top: 30px;">
+                    <span class="profile-span" style="font-size: 14px;">
+                        院長
+                    </span><br>
+                    <span class="profile-span" style="font-size: 20px;">
+                        佐藤　龍輝<br>
+                        （さとう　たつき）
+                    </span><br>
+                    
+
+                </div>
+            </div>
+
+            <div class="director-info">
+                接骨院 さとう院長の佐藤龍輝と申します。<br>
+                <br>
+                専門学生時代からインターンとして接骨院の現場に立ち基礎を学び、資格取得後は1日100名以上来院する接骨院にて数多くの症状に携わってまいりました。これまでの臨床経験を通じて、私は「その場しのぎではなく、生活を支える施術」の大切さを実感してきました。<br>
+                <br>
+                畑仕事やデスクワーク、子育てや日々の家事の中で、身体は静かに悲鳴を上げていることがあります。<br>
+                <br>
+                接骨院さとうでは、患者さま一人ひとりの生活スタイルや体の使い方に寄り添い、"今だけ楽になる"ではなく、"これから先も動ける体"を一緒に作っていけるようなケアを目指しています。<br>
+                <br>
+                また、忙しい方や、子どもがいてなかなか通院できない方にも安心してご相談いただけるよう、予約対応や環境づくりにも力を入れています。<br>
+                <br>
+                地域の皆さまにとって、身近で信頼できる存在となれるよう努めてまいります。<br>
+                どんな小さなお悩みでも、どうぞお気軽にご相談ください。<br>
+                <br>
+                接骨院さとう<br>
+            </div>
+        </div>
     </section>
     <div>
         <div class="yoyaku-button-space">
-            <img src="image/button.png" alt="">
-            <button class="yoyaku-button">
-                <span><b>●●●</b></span>
-            </button>
+            <img src="image/button.png" alt="" class="yoyaku-button-icon">
+            <div>
+                <button class="yoyaku-button" onclick="yoyaku_button()">
+                    <span><b>●●●</b></span>
+                </button>
+                <div class="yoyaku-button-menu" id="yoyaku-button-menu">
+                    <button class="yoyaku-button">
+                        <img src="image/tel-icon.png" alt="" srcset="" class="button-img">
+                    </button>
+                    <br>
+                    <button class="yoyaku-button">
+                        <img src="image/line-icon.png" alt="" srcset="" class="button-img">
+                    </button>
+                    <br>
+                    <button class="yoyaku-button">
+                        <img src="image/instagram.png" alt="" srcset="" class="button-img">
+                    </button>
+
+                </div>
+            </div>
         </div>
     </div>
-    <div class="slide-in-target" style="color: aqua;">こんにちは、スライドイン！</div>
 
+    <footer>
+        © 2025 接骨院さとう
+    </footer>
 </body>
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            } else {
-                entry.target.classList.remove('active');
-            }
+<script src="js/move_button.js"></script>
 
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    document.querySelectorAll('.slide-in-target').forEach(el => observer.observe(el));
-</script>
 
 </html>

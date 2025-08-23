@@ -14,9 +14,9 @@
         <div class="header-center">
             <a href="index.html" class="header-menu-selected">トップ</a>
             <a href="director.html" class="header-menu">ご挨拶</a>
-            <a href="http://" class="header-menu">初めての方へ</a>
-            <a href="http://" class="header-menu">料金</a>
-            <a href="http://" class="header-menu">予約</a>
+            <a href="first.html" class="header-menu">初めての方へ</a>
+            <a href="price.html" class="header-menu">料金</a>
+            <a href="reservation.html" class="header-menu">予約</a>
         </div>
     </header>
     <div class="main-image-space">
@@ -28,6 +28,7 @@
     </div>
     <section class="main-contents">
         <div class="main-contents-center">
+            
             <div class="message-space">
                 <p>怪我や体の不調でお悩みの方へ。日常の疲れや姿勢の歪み、スポーツ障害、交通事故など接骨院はあなたの健康を取り戻すサポーターです。<br>
                     ちょっと気になるな・・・そんな時、気軽にご相談下さい</p>
@@ -165,36 +166,36 @@
             </div>
         </div>
     </section>
-    <div>
+        <div>
         <div class="yoyaku-button-space">
-            <img src="image/button.png" alt="">
-            <button class="yoyaku-button" onclick="yoyaku_button()">
-                <span><b>●●●</b></span>
-            </button>
-            <div class="yoyaku-button-menu" id="yoyaku-button-menu">
+            <img src="image/button.png" alt="" class="yoyaku-button-icon">
+            <div>
                 <button class="yoyaku-button" onclick="yoyaku_button()">
-                    <img src="image/tel-icon.png" alt="" srcset="" class="button-img">
+                    <span><b>●●●</b></span>
                 </button>
-                <br>
-                <button class="yoyaku-button" onclick="yoyaku_button()">
-                    <img src="image/line-icon.png" alt="" srcset="" class="button-img">
-                </button>
-                <br>
-                <button class="yoyaku-button" onclick="yoyaku_button()">
-                    <img src="image/instagram.png" alt="" srcset="" class="button-img">
-                </button>
+                <div class="yoyaku-button-menu" id="yoyaku-button-menu">
+                    <button class="yoyaku-button">
+                        <img src="image/tel-icon.png" alt="" srcset="" class="button-img">
+                    </button>
+                    <br>
+                    <button class="yoyaku-button">
+                        <img src="image/line-icon.png" alt="" srcset="" class="button-img">
+                    </button>
+                    <br>
+                    <button class="yoyaku-button">
+                        <img src="image/instagram.png" alt="" srcset="" class="button-img">
+                    </button>
 
+                </div>
             </div>
         </div>
     </div>
-    <div class="slide-in-target" style="color: aqua;">こんにちは、スライドイン！</div>
+<footer>
+    © 接骨院さとう
+</footer>
 
 </body>
-<script>
-    function yoyaku_button() {
-        
-    }
+<script src="js/move_button.js"></script>
 
-</script>
 
 </html>
