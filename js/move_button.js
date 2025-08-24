@@ -29,3 +29,14 @@ async function yoyaku_button() {
         activate_flg = false;
     }
 }
+  let isOpen = false;
+
+  function toggleMenu() {
+    const menu = document.getElementById("menu-space");
+    if (!isOpen) {
+      menu.style.top = "0";       // 上からスライドイン
+    } else {
+      menu.style.top = "-386px";   // 上に戻す
+    }
+    isOpen = !isOpen;
+  }
