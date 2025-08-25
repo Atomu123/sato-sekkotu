@@ -1,4 +1,6 @@
 let activate_flg = false;
+let isOpen = false;
+
 
 // Promiseベースのsleep関数
 function sleep(ms) {
@@ -7,7 +9,7 @@ function sleep(ms) {
 
 async function yoyaku_button() {
     const yoyaku_button_menu = document.getElementById("yoyaku-button-menu");
-    
+
     if (!activate_flg) {
         activate_flg = true;
         yoyaku_button_menu.style.display = "block";
@@ -29,14 +31,36 @@ async function yoyaku_button() {
         activate_flg = false;
     }
 }
-  let isOpen = false;
 
-  function toggleMenu() {
+async function toggleMenu() {
     const menu = document.getElementById("menu-space");
+    const menu_inner_space = document.getElementById("menu-inner-space");
+
     if (!isOpen) {
-      menu.style.top = "0";       // 上からスライドイン
+        isOpen = true;
+        menu.style.display = "block";
+        // 下から上へアニメーション（0 → 10）
+        for (let i = 0; i <= 10; i++) {
+            menu.style.height = 38.6 * i + "px";
+            // console.log(38.6 * i + "px");
+            await sleep(10); // 50msずつ待つ
+        }
+        menu_inner_space.style.display = "block";
     } else {
-      menu.style.top = "-386px";   // 上に戻す
+        menu_inner_space.style.display = "none";
+        for (let i = 10; i >= 0; i--) {
+            menu.style.height = 38.6 * i + "px";
+
+
+            // console.log(38.6 * i + "px");
+            await sleep(10);
+        }
+
+        menu.style.display = "none";
+
+        isOpen = false;
     }
-    isOpen = !isOpen;
-  }
+
+}
+
+
