@@ -7,7 +7,6 @@
         margin: 2%;
         min-height: 100px;
         background-color: #FFF9F0;
-
         border-radius: 30px;
         padding: 1px;
         text-align: left;
@@ -854,7 +853,6 @@ display: flex;
         width: 90%;
         min-height: 100px;
         background-color: #FFF9F0;
-
         border-radius: 30px;
         text-align: center;
 
@@ -900,7 +898,7 @@ display: flex;
         width: 35px;
         position: absolute;
         margin-bottom: 100px;
-        margin-left: -30px;
+        margin-left: -40px;
 
     }
 
@@ -1096,10 +1094,10 @@ display: flex;
         border: 5px solid #2B3C73;
         /* 太さ2px, 実線, 黒 */
         padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 45px;
-        padding-right: 45px;
-        margin-top: 100px;
+        padding-bottom: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 150px;
         text-align: left;
         font-size: 18px;
         height: 100px;
@@ -1182,6 +1180,7 @@ display: flex;
         margin-top: 100px;
         border-radius: 30px;
         padding: 20px;
+        padding-bottom: 70px;
         text-align: center;
         margin-bottom: 100px;
 
@@ -1741,7 +1740,7 @@ display: flex;
     }
 
     .main-contents-sub {
-        width: 400px;
+        width: 500px;
         height: 380px;
         margin-top: 80px;
         /* border: #2B3C73 3px solid; */
