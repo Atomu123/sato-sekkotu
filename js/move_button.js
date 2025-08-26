@@ -22,7 +22,7 @@ document.getElementById("tel-icon").addEventListener("click", function() {
     //   redirectUrl('tel:0312345678');
   
 });
-document.getElementById("tel-icon").style.display = "none";
+document.getElementById("tel-icon").remove();
 
 // Promiseベースのsleep関数
 function sleep(ms) {
