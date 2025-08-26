@@ -19,11 +19,10 @@ document.getElementById("instagram").addEventListener("click", function() {
   redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
 document.getElementById("tel-icon").addEventListener("click", function() {
-opneDialog();
     //   redirectUrl('tel:0312345678');
   
 });
-
+document.getElementById("tel-icon").style.display = "none";
 
 // Promiseベースのsleep関数
 function sleep(ms) {
