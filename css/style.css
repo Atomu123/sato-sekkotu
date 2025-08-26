@@ -2,16 +2,30 @@
 @media screen and (max-width: 600px) {
 
     /* 追加分 */
+    .address-info a {
+        font-size: 12px;
+    }
+
+    .denkyu {
+        width: 25px;
+        position: absolute;
+        margin-bottom: 100px;
+        margin-left: -20px;
+
+    }
+
     img {
         object-fit: cover;
 
     }
-    .main-contents-sub{
-        width: 80%;
+
+    .main-contents-sub {
+        width: 70%;
         height: auto;
         margin-top: 80px;
         /* border: #2B3C73 3px solid; */
     }
+
     .availableTimeGrid {
         width: 80%;
 
@@ -23,6 +37,7 @@
         display: block;
         float: left;
     }
+
     .line-qr-icon {
 
         width: 90%;
@@ -164,6 +179,7 @@
     }
 
     /* 追加分 */
+
     body {
         margin: 0;
         padding: 0;
@@ -268,11 +284,11 @@
 
     .main-contents-logo {
         background-color: #7b7c7c;
-        width: 250px;
+        width: 180px;
         object-fit: cover;
-
-        margin-top: 100px;
-        height: 250px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 30px;
+        height: 180px;
         display: block;
 
 
@@ -485,7 +501,7 @@
     .address-space {
         width: 90%;
         background-color: #fff9f000;
-        margin-top: 100px;
+        margin-top: 50px;
         text-align: center;
         margin-bottom: 100px;
     }
@@ -820,6 +836,14 @@
 @media screen and (min-width: 600px) {
 
     /* 追加分 */
+    .denkyu {
+        width: 35px;
+        position: absolute;
+        margin-bottom: 100px;
+        margin-left: -30px;
+
+    }
+
     #section-desktop {
         display: block;
     }
@@ -1026,7 +1050,7 @@
     .main-contents-logo {
         background-color: #7b7c7c;
         width: 450px;
-
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
         margin-top: 100px;
         height: 450px;
         display: block;
@@ -1390,7 +1414,7 @@
         width: auto;
         height: 80%;
         text-align: center;
-        
+
     }
 
     footer {
@@ -1653,13 +1677,15 @@
         object-fit: cover;
 
     }
-    .main-contents-sub{
+
+    .main-contents-sub {
         width: 400px;
         height: 380px;
         margin-top: 80px;
         /* border: #2B3C73 3px solid; */
     }
-    #tel-icon-desktop{
+
+    #tel-icon-desktop {
         display: none;
     }
 }

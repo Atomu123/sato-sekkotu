@@ -1,10 +1,10 @@
 let activate_flg = false;
 let isOpen = false;
 document.getElementById("instagram-desktop").addEventListener("click", function() {
-  redirectUrl('https://www.instagram.com/sekkotsuin_sa');
+  redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
 document.getElementById("line-icon-desktop").addEventListener("click", function() {
-  redirectUrl('https://line.me/R/ti/p/@384ztggtto?igsh=MXZ5NmV4ZDhsc2RpbA==');
+  redirectUrl('https://line.me/R/ti/p/@384ztggt?oat_content=url&ts=08192005');
 });
 document.getElementById("tel-icon-desktop").addEventListener("click", function() {
   redirectUrl('./reservation.html#tel-no');
