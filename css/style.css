@@ -6,7 +6,12 @@
         object-fit: cover;
 
     }
-
+    .main-contents-sub{
+        width: 80%;
+        height: auto;
+        margin-top: 80px;
+        /* border: #2B3C73 3px solid; */
+    }
     .availableTimeGrid {
         width: 80%;
 
