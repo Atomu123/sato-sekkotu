@@ -1,24 +1,24 @@
 let activate_flg = false;
 let isOpen = false;
-document.getElementById("instagram-desktop").addEventListener("click", function() {
-  redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
+document.getElementById("instagram-desktop").addEventListener("click", function () {
+    redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
-document.getElementById("line-icon-desktop").addEventListener("click", function() {
-  redirectUrl('https://line.me/R/ti/p/@384ztggt?oat_content=url&ts=08192005');
+document.getElementById("line-icon-desktop").addEventListener("click", function () {
+    redirectUrl('https://line.me/R/ti/p/@384ztggt');
 });
-document.getElementById("tel-icon-desktop").addEventListener("click", function() {
-  redirectUrl('./reservation.html#tel-no');
-  
+document.getElementById("tel-icon-desktop").addEventListener("click", function () {
+
+    redirectUrl('https://line.me/R/ti/p/@384ztggtto');
 });
-document.getElementById("line-icon").addEventListener("click", function() {
-  redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
+document.getElementById("line-icon").addEventListener("click", function () {
+    redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
-document.getElementById("instagram").addEventListener("click", function() {
-  redirectUrl('https://line.me/R/ti/p/@384ztggtto?igsh=MXZ5NmV4ZDhsc2RpbA==');
+document.getElementById("instagram").addEventListener("click", function () {
+    redirectUrl('./reservation.html#tel-no');
 });
-document.getElementById("tel-icon").addEventListener("click", function() {
-  redirectUrl('tel:0312345678');
-  
+document.getElementById("tel-icon").addEventListener("click", function () {
+    redirectUrl('tel:0312345678');
+
 });
 
 
@@ -79,7 +79,7 @@ async function toggleMenu() {
     }
 
 }
-function redirectUrl(url){
+function redirectUrl(url) {
     window.location.href = url
 
 }
