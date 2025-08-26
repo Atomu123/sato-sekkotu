@@ -18,8 +18,8 @@
         display: block;
         float: left;
     }
-
     .line-qr-icon {
+
         width: 90%;
         display: block;
     }
@@ -265,6 +265,7 @@
         background-color: #7b7c7c;
         width: 250px;
         object-fit: cover;
+
         margin-top: 100px;
         height: 250px;
         display: block;
@@ -1054,8 +1055,6 @@
         color: white;
         padding: 7px;
         margin-top: 10px;
-
-
     }
 
     .yoyaku-button:hover {
@@ -1386,7 +1385,7 @@
         width: auto;
         height: 80%;
         text-align: center;
-
+        
     }
 
     footer {
@@ -1516,6 +1515,7 @@
         height: 450px;
         display: block;
         clear: both;
+
         opacity: 1;
         transform: translateY(0);
     }
