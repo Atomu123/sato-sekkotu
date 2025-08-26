@@ -2,6 +2,19 @@
 @media screen and (max-width: 600px) {
 
     /* 追加分 */
+    .first-context {
+        width: 95%;
+        margin: 2%;
+        min-height: 100px;
+        background-color: #FFF9F0;
+
+        border-radius: 30px;
+        padding: 1px;
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .address-info a {
         font-size: 12px;
     }
@@ -243,12 +256,13 @@
 
         display: block;
         text-align: center;
-        margin-top: 70px;
+        margin-top: 80px;
+        margin-bottom: 50px;
     }
 
     .center-catchphrase-mobile h1 {
 
-        font-size: 20px;
+        font-size: 16px;
 
     }
 
@@ -369,6 +383,7 @@
         padding: 5%;
         text-align: center;
         margin-bottom: 100px;
+        padding-bottom: 50px;
     }
 
     .main-contents-center {
@@ -391,7 +406,7 @@
         line-height: 30px;
         color: white;
         border-radius: 30px;
-        margin-top: 50px;
+        margin-top: 20px;
         font-size: 12px;
         padding-left: 10px;
         padding-right: 10px;
@@ -406,6 +421,7 @@
         text-align: left;
         font-size: 12px;
         width: 280px;
+        margin-bottom: 20px;
     }
 
     .accordion {
@@ -753,6 +769,7 @@
 
 
     .bubble-context-large {
+        border-radius:20px;
         width: 70%;
         background-color: #EDF1FF;
         display: inline-block;
@@ -763,6 +780,7 @@
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
         color: #2B3C73;
         float: right;
+        padding: 3px;
     }
 
     .bubble-context-large p {
@@ -772,7 +790,7 @@
         margin-top: 0;
         margin-bottom: 0;
         display: inline-block;
-        font-size: 12px;
+        font-size: 11px;
         align-items: center;
     }
 
@@ -858,6 +876,25 @@
 @media screen and (min-width: 600px) {
 
     /* 追加分 */
+
+    .center-catchphrase-mobile {
+        display: none;
+    }
+
+    .center-catchphrase-mobile h1 {
+
+        font-size: 24px;
+
+    }
+
+    .center-catchphrase-mobile p {
+        text-decoration: underline;
+        color: #C90000;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .denkyu {
         width: 35px;
         position: absolute;
@@ -1146,6 +1183,7 @@
         padding: 20px;
         text-align: center;
         margin-bottom: 100px;
+
     }
 
     .main-contents-center {
