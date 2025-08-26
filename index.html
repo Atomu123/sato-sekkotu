@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>接骨院 さとう</title>
+    <title>接骨院 さとう|黒石の接骨院</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="黒石市追子野木で開業した接骨院です、日々の疲れやケガ、当院が最後までサポート致します。黒石のバイパス（国道102号線）からアクセスできます！">
+    <meta name="keywords" content="黒石, 弘前, 平川, 尾上, 田舎館, 接骨院, 接骨院さとう">
+    <meta name="robots" content="index, follow">
+
 </head>
 
 <body>
@@ -22,12 +26,19 @@
     </header>
     <div class="menu-space" id="menu-space">
         <img class="menu-button" src="image/menu-button-close.png" onclick="toggleMenu()" />
-        <div style="clear: both;">
-        
+        <span>
+            メニュー
+        </span>
+        <div style="clear: both;" class="menu-inner-space" id="menu-inner-space">
+            <a href="index.html">トップ</a>
+            <a href="director.html">ご挨拶</a>
+            <a href="first.html">初めての方へ</a>
+            <a href="price.html">料金</a>
+            <a href="reservation.html">予約</a>
         </div>
     </div>
     <div class="main-image-space">
-        <img class="main-image" src="image/center-image.png" alt="">
+        <img class="main-image" src="image/center-image.jpg" alt="">
         <div class="center-catchphrase">
             <h1>身体の不調を探しませんか？</h1>
             <p>必ずしも痛いところ＝悪いところではありません</p>
@@ -35,7 +46,7 @@
     </div>
     <section class="main-contents">
         <div class="main-contents-center">
-            
+
             <div class="message-space">
                 <p>怪我や体の不調でお悩みの方へ。日常の疲れや姿勢の歪み、スポーツ障害、交通事故など接骨院はあなたの健康を取り戻すサポーターです。<br>
                     ちょっと気になるな・・・そんな時、気軽にご相談下さい</p>
@@ -43,8 +54,8 @@
         </div>
 
         <div class="main-contents-center">
-            <div class="main-contents-logo">
-            </div>
+            <img src="image/sub.jpg" class="main-contents-sub">
+        </div>
         </div>
         <div class="main-contents-center">
             <div class="financeMedical">
@@ -52,8 +63,8 @@
                     <h2>保険施術</h2>
                 </div>
                 <div class="main-contents-center">
-                    <div class="main-contents-logo">
-                    </div>
+                    <img src="image/square-icon.png" class="main-contents-logo">
+
                 </div>
                 <div class="main-contents-center">
                     <h3 class="min-title">
@@ -106,7 +117,7 @@
         </div>
     </div>
     <section class="main-contents">
-        <div class="main-contents-center">
+        <!-- <div class="main-contents-center">
             <div class="availableTimeInfo">
                 <hr style="margin-bottom: 50px;">
                 <div class="availableTimeInfoSpace">
@@ -123,9 +134,9 @@
                 </div>
                 <hr style="margin-top: 50px;">
             </div>
-        </div>
+        </div> -->
         <div class="main-contents-center">
-            <!-- <img src="image/availableTimeGrid.png" alt="" style="display: block;margin-bottom: 50px;"> -->
+            <img src="image/availableTimeGrid.png" alt="" class="availableTimeGrid" style="margin-bottom: 50px;">
         </div>
     </section>
     <div class="accordion">
@@ -137,15 +148,15 @@
     <section class="main-contents">
 
         <div class="main-contents-center">
-            <h1 style="color: red;">弘前・平川エリア</h1>
+            <h1 style="color: red;">弘前・平川・黒石エリア</h1>
         </div>
         <div class="main-contents-center">
             <div class="address-space">
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.7999199071596!2d140.5832520053707!3d40.63429421232621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b069f1e0bb5d3%3A0xca7bb0d0ba767a61!2z44CSMDM2LTAzNTcg6Z2S5qOu55yM6buS55-z5biC6L-95a2Q6YeO5pyo77yT5LiB55uu77yU77yU77yZ4oiS77yR!5e0!3m2!1sja!2sjp!4v1755352598977!5m2!1sja!2sjp"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="area-map"></iframe>
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="area-map"></iframe>
 
                 <div class="address-info" style="color: #2B3C73;">
                     <h3 class="clinic-name" style="">
@@ -173,7 +184,7 @@
             </div>
         </div>
     </section>
-        <div>
+    <div>
         <div class="yoyaku-button-space">
             <img src="image/button.png" alt="" class="yoyaku-button-icon">
             <div>
@@ -181,26 +192,40 @@
                     <span><b>●●●</b></span>
                 </button>
                 <div class="yoyaku-button-menu" id="yoyaku-button-menu">
-                    <button class="yoyaku-button">
-                        <img src="image/tel-icon.png" alt="" srcset="" class="button-img">
+                    <button class="yoyaku-button" id="tel-icon-desktop">
+                        <img src="image/tel-icon-desktop.png"  alt="" srcset="" class="button-img">
                     </button>
                     <br>
-                    <button class="yoyaku-button">
-                        <img src="image/line-icon.png" alt="" srcset="" class="button-img">
+                    <button class="yoyaku-button" id="line-icon-desktop">
+                        <img src="image/line-icon-desktop.png" alt="" srcset="" class="button-img">
                     </button>
                     <br>
-                    <button class="yoyaku-button">
-                        <img src="image/instagram.png" alt="" srcset="" class="button-img">
+                    <button class="yoyaku-button" id="instagram-desktop">
+                        <img src="image/instagram-desktop.png" alt="" srcset="" class="button-img">
                     </button>
+
 
                 </div>
             </div>
         </div>
     </div>
-<footer>
-    © 接骨院さとう
-</footer>
+    <footer>
+        © 接骨院さとう
+    </footer>
+    <div class="footer-bar">
+        <div class="main-contents-center">
+            <a href="">
+                <img src="image/line-icon.png" alt="">
+            </a>
+            <a href="">
+                <img src="image/instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="image/tel-icon.png" alt="">
+            </a>
 
+        </div>
+    </div>
 </body>
 <script src="js/move_button.js"></script>
 
