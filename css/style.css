@@ -782,12 +782,15 @@
     }
 
     .bubble-context-large p {
+display: flex;
+  align-items: center;     /* 垂直中央揃え */
+
 
         height: 100px;
         padding: 5px;
         margin-top: 0;
         margin-bottom: 0;
-        display: inline-block;
+
         font-size: 11px;
         align-items: center;
     }
