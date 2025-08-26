@@ -1,24 +1,27 @@
 let activate_flg = false;
 let isOpen = false;
-document.getElementById("instagram-desktop").addEventListener("click", function () {
-    redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
+document.getElementById("instagram-desktop").addEventListener("click", function() {
+  redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
-document.getElementById("line-icon-desktop").addEventListener("click", function () {
-    redirectUrl('https://line.me/R/ti/p/@384ztggt');
+document.getElementById("line-icon-desktop").addEventListener("click", function() {
+      redirectUrl('https://l.instagram.com/?u=https%3A%2F%2Flin.ee%2FwyRqoSN%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacEltCwdTbx5mQ4LG-YhOIGeLNHSkghG_HkxNEK4H-y31XwGqN1Ry4Xs1Snaw_aem_D_XKIdXlTt8awMQZU7hjpg&e=AT0bcLOQ1P--owLDSM5TjmvZU7cdL0sEcq79i1EfkqXfJCuKPbBtGG0SFvxv2NQEZNH6vTtwwzcc4xNi_QUYwJjHu5ZVXOLh5iT1Adk');
 });
-document.getElementById("tel-icon-desktop").addEventListener("click", function () {
+document.getElementById("tel-icon-desktop").addEventListener("click", function() {
+//   redirectUrl('./reservation.html#tel-no');
+openDialog();
+  
+});
+document.getElementById("line-icon").addEventListener("click", function() {
+      redirectUrl('https://l.instagram.com/?u=https%3A%2F%2Flin.ee%2FwyRqoSN%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacEltCwdTbx5mQ4LG-YhOIGeLNHSkghG_HkxNEK4H-y31XwGqN1Ry4Xs1Snaw_aem_D_XKIdXlTt8awMQZU7hjpg&e=AT0bcLOQ1P--owLDSM5TjmvZU7cdL0sEcq79i1EfkqXfJCuKPbBtGG0SFvxv2NQEZNH6vTtwwzcc4xNi_QUYwJjHu5ZVXOLh5iT1Adk');
 
-    redirectUrl('https://line.me/R/ti/p/@384ztggtto');
 });
-document.getElementById("line-icon").addEventListener("click", function () {
-    redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
+document.getElementById("instagram").addEventListener("click", function() {
+  redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
-document.getElementById("instagram").addEventListener("click", function () {
-    redirectUrl('./reservation.html#tel-no');
-});
-document.getElementById("tel-icon").addEventListener("click", function () {
-    redirectUrl('tel:0312345678');
-
+document.getElementById("tel-icon").addEventListener("click", function() {
+opneDialog();
+    //   redirectUrl('tel:0312345678');
+  
 });
 
 
@@ -36,14 +39,14 @@ async function yoyaku_button() {
 
         // 下から上へアニメーション（0 → 10）
         for (let i = 0; i <= 10; i++) {
-            yoyaku_button_menu.style.bottom = 20 * i + "px";
+            yoyaku_button_menu.style.bottom = 30 * i + "px";
             await sleep(10); // 50msずつ待つ
         }
 
     } else {
         // 上から下へアニメーション（10 → 0）
         for (let i = 10; i >= 0; i--) {
-            yoyaku_button_menu.style.bottom = 20 * i + "px";
+            yoyaku_button_menu.style.bottom = 30 * i + "px";
             await sleep(10);
         }
         yoyaku_button_menu.style.display = "none";
@@ -79,7 +82,10 @@ async function toggleMenu() {
     }
 
 }
-function redirectUrl(url) {
+function redirectUrl(url){
     window.location.href = url
 
+}
+function openDialog(){
+    alert("申し訳ございません。\r\n電話番号はただいま準備中です");
 }
