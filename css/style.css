@@ -185,6 +185,7 @@
         padding: 0;
         background-color: #EEF2FF;
         width: 100%;
+        font-family: "Noto Serif JP", "Yu Mincho", "MS Mincho", serif;
 
 
     }
@@ -237,9 +238,30 @@
         margin: auto;
     }
 
+    .center-catchphrase-mobile {
+        /* width: 960px; */
+
+        display: block;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .center-catchphrase-mobile h1 {
+
+        font-size: 20px;
+
+    }
+
+    .center-catchphrase-mobile p {
+        text-decoration: underline;
+        color: #C90000;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .center-catchphrase h1 {
-        font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro",
-            "MS Mincho", "Yu Mincho", serif;
+
         font-size: 32px;
         margin-top: 70px;
     }
@@ -273,7 +295,7 @@
         padding-bottom: 20px;
         padding-left: 25px;
         padding-right: 25px;
-        margin-top: 100px;
+
         text-align: left;
         font-size: 12px;
         height: 100px;
@@ -943,6 +965,7 @@
         /* 繰り返しなし */
 
         min-width: 1100px;
+        font-family: "Noto Serif JP", "Yu Mincho", "MS Mincho", serif;
 
     }
 
