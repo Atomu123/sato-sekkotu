@@ -10,6 +10,16 @@ document.getElementById("tel-icon-desktop").addEventListener("click", function()
   redirectUrl('./reservation.html#tel-no');
   
 });
+document.getElementById("line-icon").addEventListener("click", function() {
+  redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
+});
+document.getElementById("instagram").addEventListener("click", function() {
+  redirectUrl('https://line.me/R/ti/p/@384ztggtto?igsh=MXZ5NmV4ZDhsc2RpbA==');
+});
+document.getElementById("tel-icon").addEventListener("click", function() {
+  redirectUrl('tel:0312345678');
+  
+});
 
 
 // Promiseベースのsleep関数
@@ -69,8 +79,6 @@ async function toggleMenu() {
     }
 
 }
-
-
 function redirectUrl(url){
     window.location.href = url
 
