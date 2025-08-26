@@ -88,3 +88,57 @@ function redirectUrl(url){
 function openDialog(){
     alert("申し訳ございません。\r\n電話番号はただいま準備中です");
 }
+
+const images = [
+  "image/center-image.jpg",
+  "image/center-image.png",
+  "image/top2.jpg",
+//   "image/top3.png",
+//   "image/top4.png",
+  
+  
+];
+
+let currentIndex = 0;
+const slide = document.getElementById("slide");
+const indicators = document.getElementById("indicators");
+
+// 初期スタイル
+slide.style.opacity = 0;
+slide.style.transition = "opacity 1s ease";
+slide.style.width = "100%";
+
+// インジケーター生成
+function createIndicators() {
+  indicators.innerHTML = "";
+  images.forEach((_, i) => {
+    const dot = document.createElement("span");
+    dot.textContent = i === currentIndex ? "●" : "〇";
+    dot.style.margin = "0 10px";
+    
+    indicators.appendChild(dot);
+  });
+}
+
+// スライド表示＋インジケーター更新
+function showSlide(index) {
+  slide.style.opacity = 0;
+
+  setTimeout(() => {
+    slide.src = images[index];
+    slide.style.opacity = 1;
+    createIndicators();
+  }, 500);
+}
+
+// 自動再生
+function startSlideshow() {
+  showSlide(currentIndex);
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showSlide(currentIndex);
+  }, 4000);
+}
+
+startSlideshow();
