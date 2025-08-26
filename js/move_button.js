@@ -93,10 +93,7 @@ const images = [
   "image/center-image.jpg",
   "image/center-image.png",
   "image/top2.jpg",
-//   "image/top3.png",
-//   "image/top4.png",
-  
-  
+
 ];
 
 let currentIndex = 0;

@@ -2,6 +2,15 @@
 @media screen and (max-width: 600px) {
 
     /* 追加分 */
+        #indicators{
+        color: #ffffffb4;
+        position: absolute;
+        top: 290px;
+        width: 100%;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+    }
     .first-context {
         width: 95%;
         margin: 2%;
@@ -686,8 +695,8 @@
     }
 
     footer {
-        height: 200px;
-        line-height: 200px;
+        height: 100px;
+        line-height: 100px;
         text-align: center;
         color: #2B3C73;
         margin-bottom: 100px;
