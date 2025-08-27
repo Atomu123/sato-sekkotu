@@ -887,7 +887,7 @@ display: flex;
     #indicators{
         color: #ffffffb4;
         position: absolute;
-        bottom: 5px;
+        top: 780px;
         width: 100%;
         display: block;
         text-align: center;

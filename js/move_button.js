@@ -125,7 +125,7 @@ function showSlide(index) {
     slide.src = images[index];
     slide.style.opacity = 1;
     createIndicators();
-  }, 500);
+  }, 1000);
 }
 
 // 自動再生
