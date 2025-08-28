@@ -658,7 +658,7 @@
         text-decoration: none;
     }
 
-    .header-center {
+    .header-center {                                        
         position: fixed;
         z-index: 4;
         width: 100%;

@@ -96,46 +96,46 @@ const images = [
 
 ];
 
-let currentIndex = 0;
-const slide = document.getElementById("slide");
-const indicators = document.getElementById("indicators");
+// let currentIndex = 0;
+// const slide = document.getElementById("slide");
+// const indicators = document.getElementById("indicators");
 
-// 初期スタイル
-slide.style.opacity = 0;
-slide.style.transition = "opacity 1s ease";
-slide.style.width = "100%";
+// // 初期スタイル
+// slide.style.opacity = 0;
+// slide.style.transition = "opacity 1s ease";
+// slide.style.width = "100%";
 
-// インジケーター生成
-function createIndicators() {
-  indicators.innerHTML = "";
-  images.forEach((_, i) => {
-    const dot = document.createElement("span");
-    dot.textContent = i === currentIndex ? "●" : "〇";
-    dot.style.margin = "0 10px";
+// // インジケーター生成
+// function createIndicators() {
+//   indicators.innerHTML = "";
+//   images.forEach((_, i) => {
+//     const dot = document.createElement("span");
+//     dot.textContent = i === currentIndex ? "●" : "〇";
+//     dot.style.margin = "0 10px";
     
-    indicators.appendChild(dot);
-  });
-}
+//     indicators.appendChild(dot);
+//   });
+// }
 
-// スライド表示＋インジケーター更新
-function showSlide(index) {
-  slide.style.opacity = 0;
+// // スライド表示＋インジケーター更新
+// function showSlide(index) {
+//   slide.style.opacity = 0;
 
-  setTimeout(() => {
-    slide.src = images[index];
-    slide.style.opacity = 1;
-    createIndicators();
-  }, 1000);
-}
+//   setTimeout(() => {
+//     slide.src = images[index];
+//     slide.style.opacity = 1;
+//     createIndicators();
+//   }, 1000);
+// }
 
-// 自動再生
-function startSlideshow() {
-  showSlide(currentIndex);
+// // 自動再生
+// function startSlideshow() {
+//   showSlide(currentIndex);
 
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % images.length;
-    showSlide(currentIndex);
-  }, 4000);
-}
+//   setInterval(() => {
+//     currentIndex = (currentIndex + 1) % images.length;
+//     showSlide(currentIndex);
+//   }, 4000);
+// }
 
-startSlideshow();
+// startSlideshow();
