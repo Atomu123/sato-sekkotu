@@ -89,12 +89,12 @@ function openDialog(){
     alert("申し訳ございません。\r\n電話番号はただいま準備中です");
 }
 
-const images = [
-  "image/center-image.jpg",
-  "image/center-image.png",
-  "image/top2.jpg",
+// const images = [
+//   "image/center-image.jpg",
+//   "image/center-image2.jpg",
+//   "image/center-image3.jpg",
 
-];
+// ];
 
 // let currentIndex = 0;
 // const slide = document.getElementById("slide");
@@ -123,7 +123,7 @@ const images = [
 
 //   setTimeout(() => {
 //     slide.src = images[index];
-//     slide.style.opacity = 1;
+//     slide.style.opacity = 0.8;
 //     createIndicators();
 //   }, 1000);
 // }
