@@ -19,7 +19,7 @@ document.getElementById("instagram").addEventListener("click", function() {
   redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
 document.getElementById("tel-icon").addEventListener("click", function() {
-      redirectUrl('tel:0312345678');
+      redirectUrl('tel:0172785010');
   
 });
 // document.getElementById("tel-icon").remove();
