@@ -12,7 +12,7 @@ document.getElementById("tel-icon-desktop").addEventListener("click", function()
   
 });
 document.getElementById("line-icon").addEventListener("click", function() {
-      redirectUrl('https://l.instagram.com/?u=https%3A%2F%2Flin.ee%2FwyRqoSN%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacEltCwdTbx5mQ4LG-YhOIGeLNHSkghG_HkxNEK4H-y31XwGqN1Ry4Xs1Snaw_aem_D_XKIdXlTt8awMQZU7hjpg&e=AT0bcLOQ1P--owLDSM5TjmvZU7cdL0sEcq79i1EfkqXfJCuKPbBtGG0SFvxv2NQEZNH6vTtwwzcc4xNi_QUYwJjHu5ZVXOLh5iT1Adk');
+      redirectUrl('https://line.me/R/ti/p/@384ztggt?oat_content=url&ts=08192005');
 
 });
 document.getElementById("instagram").addEventListener("click", function() {
