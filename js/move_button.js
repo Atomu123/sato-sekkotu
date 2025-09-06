@@ -4,11 +4,11 @@ document.getElementById("instagram-desktop").addEventListener("click", function(
   redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
 document.getElementById("line-icon-desktop").addEventListener("click", function() {
-      redirectUrl('https://l.instagram.com/?u=https%3A%2F%2Flin.ee%2FwyRqoSN%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAacEltCwdTbx5mQ4LG-YhOIGeLNHSkghG_HkxNEK4H-y31XwGqN1Ry4Xs1Snaw_aem_D_XKIdXlTt8awMQZU7hjpg&e=AT0bcLOQ1P--owLDSM5TjmvZU7cdL0sEcq79i1EfkqXfJCuKPbBtGG0SFvxv2NQEZNH6vTtwwzcc4xNi_QUYwJjHu5ZVXOLh5iT1Adk');
+      redirectUrl('https://line.me/R/ti/p/@384ztggt?oat_content=url&ts=08192005');
 });
 document.getElementById("tel-icon-desktop").addEventListener("click", function() {
-//   redirectUrl('./reservation.html#tel-no');
-openDialog();
+  redirectUrl('./reservation.html#tel-no');
+
   
 });
 document.getElementById("line-icon").addEventListener("click", function() {
@@ -19,10 +19,10 @@ document.getElementById("instagram").addEventListener("click", function() {
   redirectUrl('https://www.instagram.com/sekkotsuin_sato/');
 });
 document.getElementById("tel-icon").addEventListener("click", function() {
-    //   redirectUrl('tel:0312345678');
+      redirectUrl('tel:0312345678');
   
 });
-document.getElementById("tel-icon").remove();
+// document.getElementById("tel-icon").remove();
 
 // Promiseベースのsleep関数
 function sleep(ms) {
@@ -85,57 +85,55 @@ function redirectUrl(url){
     window.location.href = url
 
 }
-function openDialog(){
-    alert("申し訳ございません。\r\n電話番号はただいま準備中です");
+
+
+const images = [
+  "image/center-image.jpg",
+  "image/center-image2.jpg",
+  "image/Medical.jpg",
+
+];
+
+let currentIndex = 0;
+const slide = document.getElementById("slide");
+const indicators = document.getElementById("indicators");
+
+// 初期スタイル
+slide.style.opacity = 0;
+slide.style.transition = "opacity 1s ease";
+slide.style.width = "100%";
+
+// インジケーター生成
+function createIndicators() {
+  indicators.innerHTML = "";
+  images.forEach((_, i) => {
+    const dot = document.createElement("span");
+    dot.textContent = i === currentIndex ? "●" : "〇";
+    dot.style.margin = "0 10px";
+    
+    indicators.appendChild(dot);
+  });
 }
 
-// const images = [
-//   "image/center-image.jpg",
-//   "image/center-image2.jpg",
-//   "image/center-image3.jpg",
+// スライド表示＋インジケーター更新
+function showSlide(index) {
+  slide.style.opacity = 0;
 
-// ];
+  setTimeout(() => {
+    slide.src = images[index];
+    slide.style.opacity = 0.8;
+    createIndicators();
+  }, 1000);
+}
 
-// let currentIndex = 0;
-// const slide = document.getElementById("slide");
-// const indicators = document.getElementById("indicators");
+// 自動再生
+function startSlideshow() {
+  showSlide(currentIndex);
 
-// // 初期スタイル
-// slide.style.opacity = 0;
-// slide.style.transition = "opacity 1s ease";
-// slide.style.width = "100%";
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showSlide(currentIndex);
+  }, 4000);
+}
 
-// // インジケーター生成
-// function createIndicators() {
-//   indicators.innerHTML = "";
-//   images.forEach((_, i) => {
-//     const dot = document.createElement("span");
-//     dot.textContent = i === currentIndex ? "●" : "〇";
-//     dot.style.margin = "0 10px";
-    
-//     indicators.appendChild(dot);
-//   });
-// }
-
-// // スライド表示＋インジケーター更新
-// function showSlide(index) {
-//   slide.style.opacity = 0;
-
-//   setTimeout(() => {
-//     slide.src = images[index];
-//     slide.style.opacity = 0.8;
-//     createIndicators();
-//   }, 1000);
-// }
-
-// // 自動再生
-// function startSlideshow() {
-//   showSlide(currentIndex);
-
-//   setInterval(() => {
-//     currentIndex = (currentIndex + 1) % images.length;
-//     showSlide(currentIndex);
-//   }, 4000);
-// }
-
-// startSlideshow();
+startSlideshow();

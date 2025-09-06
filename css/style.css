@@ -2,7 +2,14 @@
 @media screen and (max-width: 600px) {
 
     /* 追加分 */
-        #indicators{
+    .spa-image {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 5px;
+
+    }
+
+    #indicators {
         color: #ffffffb4;
         position: absolute;
         top: 290px;
@@ -11,6 +18,7 @@
         display: block;
         text-align: center;
     }
+
     .first-context {
         width: 95%;
         margin: 2%;
@@ -242,7 +250,7 @@
         width: 100%;
         height: 320px;
         background-color: rgb(255, 255, 255);
-        
+
     }
 
     .center-catchphrase {
@@ -491,6 +499,7 @@
     }
 
     .clinic-image {
+        border-radius: 10px;
         display: block;
         height: 180px;
         width: 100%;
@@ -659,7 +668,7 @@
         text-decoration: none;
     }
 
-    .header-center {                                        
+    .header-center {
         position: fixed;
         z-index: 4;
         width: 100%;
@@ -724,6 +733,7 @@
         background-color: #767676;
         border-radius: 15px;
     }
+
     .director-image img {
         border-radius: 15px;
         width: 150px;
@@ -784,7 +794,7 @@
 
 
     .bubble-context-large {
-        border-radius:20px;
+        border-radius: 20px;
         width: 70%;
         display: inline-block;
         margin: 0;
@@ -797,8 +807,9 @@
     }
 
     .bubble-context-large p {
-display: flex;
-  align-items: center;     /* 垂直中央揃え */
+        display: flex;
+        align-items: center;
+        /* 垂直中央揃え */
 
 
         height: 100px;
@@ -891,7 +902,15 @@ display: flex;
 @media screen and (min-width: 600px) {
 
     /* 追加分 */
-    #indicators{
+        /* 追加分 */
+    .spa-image {
+        width: 600px;
+        height: 350px;
+        margin-bottom: 35px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+    }
+    #indicators {
         color: #ffffffb4;
         position: absolute;
         top: 780px;
@@ -899,6 +918,7 @@ display: flex;
         display: block;
         text-align: center;
     }
+
     .center-catchphrase-mobile {
         display: none;
     }
@@ -1304,6 +1324,7 @@ display: flex;
     }
 
     .clinic-image {
+
         display: block;
         height: 220px;
         width: 220px;
@@ -1531,9 +1552,10 @@ display: flex;
         margin-right: 10px;
         background-color: #767676;
     }
-    .director-image img{
-            width: 100%;
-            height: 100% ;
+
+    .director-image img {
+        width: 100%;
+        height: 100%;
     }
 
     .director-info {
@@ -1683,7 +1705,7 @@ display: flex;
         min-height: 50p;
         font-size: 22px;
         padding: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .flowchart {
