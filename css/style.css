@@ -1,10 +1,6 @@
 /* スマホ（〜600px） */
 @media screen and (max-width: 600px) {
-    .tel-num[href^="tel:"] {
-        color: inherit;
-        text-decoration: none;
-        pointer-events: none;
-    }
+
     /* 追加分 */
     .spa-image {
         width: 300px;
@@ -469,8 +465,6 @@
     .availableTime {
         display: inline;
         width: 67px;
-
-
     }
 
     .availableTimeInfo {
