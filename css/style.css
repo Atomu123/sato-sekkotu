@@ -2,6 +2,15 @@
 @media screen and (max-width: 600px) {
 
     /* 追加分 */
+    .warn-tel {
+        text-align: left;
+        display: inline-block;
+        width: 110%;
+        font-size: 9px;
+        color: #555555;
+        margin-top: 10px;
+    }
+
     .spa-image {
         width: 300px;
         height: 250px;
@@ -900,7 +909,7 @@
 @media screen and (min-width: 600px) {
 
     /* 追加分 */
-        /* 追加分 */
+    /* 追加分 */
     .spa-image {
         width: 600px;
         height: 350px;
@@ -908,6 +917,7 @@
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
     }
+
     #indicators {
         color: #ffffffb4;
         position: absolute;
@@ -1034,6 +1044,14 @@
     }
 
     /* 追加分 */
+    .warn-tel {
+        text-align: left;
+        display: inline-block;
+        width: 375px;
+        font-size: 15px;
+        color: #555555;
+        margin-top: 10px;
+    }
 
     body {
         margin: 0;
@@ -1798,8 +1816,3 @@
 
 
 }
-
-/* background-image: url('../image/background.png'); 
-  background-size: contain;                  
-  background-position: center;               
-  background-repeat: repeat;  */
